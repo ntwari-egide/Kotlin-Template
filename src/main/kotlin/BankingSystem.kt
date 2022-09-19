@@ -1,9 +1,25 @@
 import java.util.Scanner
 
 fun main(){
-    logginScreen();
+//    logginScreen();
+    store();
 
+}
 
+fun store() {
+
+    val reader = Scanner(System.`in`)
+
+    var fruits = mutableListOf<String>("banana", "avocado", "apple", "kiwifruit")
+
+    println(" \t\t ADD NEW FRUITS")
+    for ( index in 0  until 5) {
+        println("Enter fruit ${index + 1} : ")
+        fruits.add(reader.next())
+    }
+
+    println(" \t\t WHAT WE HAVE IN THE MARKET")
+    for (index: Int in fruits.indices)  print( " ${fruits[index]}\t")
 }
 
 fun logginScreen () {
