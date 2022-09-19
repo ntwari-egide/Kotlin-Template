@@ -16,5 +16,13 @@ fun add(num1: Int, num2: Int): Int {
 
 fun useOfCalling( firstName: String, secondName: String)  {
 
-    println("${firstName} and ${secondName} is : ${ firstName + " " + secondName}")
+    // constants
+    val memoryCapability: Int ? = 23;
+
+    // simple variables
+    var fullName = firstName + " "  + secondName
+
+
+    println("${firstName} and ${secondName} is : ${ fullName}")
+    println(" My constant: " + memoryCapability)
 }
