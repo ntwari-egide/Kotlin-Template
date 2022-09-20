@@ -2,9 +2,28 @@ import java.util.Scanner
 
 fun main(){
 //    logginScreen();
-    store();
+//    store();
+
+    println("Decision: ${choiceMake("1")}" )
+}
+
+fun receiveInput() {
+    val reader = Scanner(System.`in`)
+
+    var choice: String ?
+
+    println("Enter your choice: ")
+    choice = reader.next()
+
 
 }
+
+fun choiceMake(choice : Any) : Any =
+    when(choice) {
+        "1" -> receiveInput()
+        else -> "Incorrect inputs"
+    }
+
 
 fun store() {
 
